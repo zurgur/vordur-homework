@@ -1,6 +1,8 @@
+import NavBar from '../components/NavBar';
+
 const Home = (): JSX.Element => (
   <div>
-    Hello world!
+    <NavBar />
   </div>
 );
 
