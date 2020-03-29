@@ -12,6 +12,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import Checkbox from '@material-ui/core/Checkbox';
+import clsx from 'clsx';
 
 // #region styles
 export const ValitorColor = '#FCBD12';
@@ -81,6 +82,9 @@ const useStyles = makeStyles(() => ({
     display: 'flex',
     flexDirection: 'column',
   },
+  gray: {
+    color: 'darkgray',
+  },
 }));
 
 // #endregion
@@ -92,9 +96,23 @@ interface Props {
 
 export default ({ name, kt }: Props): JSX.Element => {
   const [open, setOpen] = useState(false);
+  const [checked, setCheked] = useState(true);
   const classes = useStyles();
   const [priceIndex, setPriceIndex] = useState(0);
   const prizes = ['25.000.000', '30.000.000', '35.000.000'];
+
+  const selectPrice = (index: number): void => {
+    if (checked) {
+      setPriceIndex(index);
+    }
+  };
+
+  const switchOpen = (): void => {
+    if (checked) {
+      setOpen(!open);
+    }
+  };
+
   return (
     <Paper className={classes.paper}>
       <img src="./childIcon-1.svg" alt="child" className={classes.headImage} />
@@ -104,11 +122,16 @@ export default ({ name, kt }: Props): JSX.Element => {
             {kt}
           </Typography>
           <Switch
+            checked={checked}
+            onClick={(): void => setCheked(!checked)}
             color="default"
             style={{ color: ValitorColor }}
           />
         </div>
-        <Typography variant="h5" className={classes.nameStyle}>
+        <Typography
+          variant="h5"
+          className={clsx(classes.nameStyle, { [classes.gray]: !checked })}
+        >
           {name}
         </Typography>
       </div>
@@ -118,7 +141,7 @@ export default ({ name, kt }: Props): JSX.Element => {
           <div className={classes.price}>
             <p>bótafarhæð</p>
             <h3 className={classes.nameStyle}>35.000.000 kr.</h3>
-            <button type="button" onClick={(): void => setOpen(!open)} className={classes.button}>
+            <button type="button" onClick={switchOpen} className={classes.button}>
               <ArrowForwardIosIcon style={{ ...arrowIconStyle, transform: `rotate(${Number(open) * 90}deg)` }} />
               Breyta
             </button>
@@ -144,7 +167,7 @@ export default ({ name, kt }: Props): JSX.Element => {
                   <Checkbox
                     edge="start"
                     checked={priceIndex === index}
-                    onClick={(): void => setPriceIndex(index)}
+                    onClick={(): void => selectPrice(index)}
                     tabIndex={-1}
                     disableRipple
                     style={{ color: ValitorColor }}
@@ -160,7 +183,10 @@ export default ({ name, kt }: Props): JSX.Element => {
         <Typography>
           iðgjöld
         </Typography>
-        <Typography variant="h6" className={classes.totalPrice}>
+        <Typography
+          variant="h6"
+          className={clsx(classes.totalPrice, { [classes.gray]: !checked })}
+        >
           {'1.038 kr '}
           <Typography>
             {' / mán'}
