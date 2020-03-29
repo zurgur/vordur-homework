@@ -11,6 +11,7 @@ const useStyles = makeStyles(() => ({
     left: 0,
     right: 0,
     margin: 0,
+    zIndex: 1,
   },
   root: {
     lineHeight: 1,

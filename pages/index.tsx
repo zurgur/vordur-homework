@@ -1,12 +1,12 @@
-import ChildCard from '../components/ChildCard';
 import NavBar from '../components/NavBar';
 import Title from '../components/Title';
+import ChildList from '../components/ChildList';
 
 const Home = (): JSX.Element => (
   <div>
     <NavBar />
     <Title />
-    <ChildCard name="Peter pan" kt="11111 - 1111" />
+    <ChildList />
     <style jsx global>
       {`
         body {
