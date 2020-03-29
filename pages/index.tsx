@@ -1,12 +1,14 @@
 import NavBar from '../components/NavBar';
+import Title from '../components/Title';
 
 const Home = (): JSX.Element => (
   <div>
     <NavBar />
+    <Title />
     <style jsx global>
       {`
         body {
-          background: #FBF9F6;
+          background: #F0F0F0;
         }
       `}
     </style>
