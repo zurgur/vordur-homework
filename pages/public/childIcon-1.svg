@@ -1,0 +1,21 @@
+<svg width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<circle cx="52.5" cy="42.5" r="22.5" fill="white"/>
+</g>
+<path d="M62.9627 39.9216H62.9457C62.5077 34.4014 57.4218 30.7617 52.4985 30.7617C47.5752 30.7617 42.4893 34.4014 42.0513 39.9216H42.0344C40.2752 39.9216 38.8496 41.3472 38.8496 43.1064C38.8496 44.8656 40.2752 46.2911 42.0344 46.2911H42.0513C43.8057 52.0613 49.9046 55.3164 55.6735 53.5633C59.1592 52.5041 61.8853 49.7768 62.9457 46.2911H62.9627C64.7219 46.2911 66.1474 44.8656 66.1474 43.1064C66.1474 41.3472 64.7219 39.9216 62.9627 39.9216Z" stroke="#FCBD00" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M52.4995 30.7617C54.0076 30.7617 55.2293 31.9847 55.2281 33.4927C55.2281 35.0008 54.0052 36.2225 52.4971 36.2213C51.3409 36.2213 50.3096 35.4921 49.9238 34.4014" stroke="#FCBD00" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M54.9059 48.5659C53.5301 49.7791 51.4676 49.7791 50.0918 48.5659" stroke="#FCBD00" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M58.8682 41.2867C58.8682 42.2913 58.0529 43.1066 57.0484 43.1066C56.0438 43.1066 55.2285 42.2913 55.2285 41.2867" stroke="#FCBD00" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49.7686 41.2867C49.7686 42.2913 48.9533 43.1066 47.9488 43.1066C46.9442 43.1066 46.1289 42.2913 46.1289 41.2867" stroke="#FCBD00" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_d" x="0" y="0" width="105" height="105" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="10"/>
+<feGaussianBlur stdDeviation="15"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
