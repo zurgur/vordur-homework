@@ -93,7 +93,7 @@ interface Props {
 export default ({ name, kt }: Props): JSX.Element => {
   const [open, setOpen] = useState(false);
   const classes = useStyles();
-  const [ priceIndex, setPriceIndex ] = useState(0);
+  const [priceIndex, setPriceIndex] = useState(0);
   const prizes = ['25.000.000', '30.000.000', '35.000.000'];
   return (
     <Paper className={classes.paper}>
